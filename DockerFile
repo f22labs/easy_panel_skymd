@@ -9,4 +9,4 @@ WORKDIR /bitnami/minio/data
 
 VOLUME /bitnami/minio/data
 
-CMD ["minio", "server", "/bitnami/minio/data", "--address", ":9000", "--console-address", ":9001"]
+CMD ["minio", "server", "/bitnami/minio/data", "--address", "127.0.0.1:9000", "--console-address", "127.0.0.1:9001"]
