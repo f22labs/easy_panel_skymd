@@ -9,4 +9,4 @@ WORKDIR /data
 
 VOLUME /data
 
-CMD ["minio", "server", "/buckets", "--address", ":9000", "--console-address", ":9001"]
+CMD ["minio", "server", "--address", ":9000", "--console-address", ":9001"]
