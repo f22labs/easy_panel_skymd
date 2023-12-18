@@ -3,10 +3,10 @@ FROM bitnami/minio:latest
 ENV MINIO_ACCESS_KEY=mirza
 ENV MINIO_SECRET_KEY=test1234
 
-EXPOSE 9000
+EXPOSE 9000 9001
 
 WORKDIR /data
 
 VOLUME /data
 
-CMD ["minio", "server", "/data"]
+CMD ["minio", "server", "/data", "--console-address", ":9001"]
